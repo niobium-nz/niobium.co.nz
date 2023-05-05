@@ -73,12 +73,12 @@ stages:
               deploymentMode: 'Incremental'
               deploymentName: 'DeployPipelineTemplate'
 
-            - task: AzureFileCopy@3
-              displayName: 'AzureBlob File Copy'
-              inputs:
-                SourcePath: '$(Pipeline.Workspace)/drop/src'
-                azureSubscription: $(azureServiceConnection)
-                Destination: AzureBlob
-                storage: $(storageName)
-                ContainerName: '$web'
-                CleanTargetBeforeCopy: true
+          - task: AzureFileCopy@3
+            displayName: 'AzureBlob File Copy'
+            inputs:
+              SourcePath: '$(Pipeline.Workspace)/drop/src'
+              azureSubscription: $(azureServiceConnection)
+              Destination: AzureBlob
+              storage: $(storageName)
+              ContainerName: '$web'
+              CleanTargetBeforeCopy: true
