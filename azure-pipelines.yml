@@ -71,7 +71,7 @@ stages:
               location: '$(location)'
               templateLocation: 'Linked artifact'
               csmFile: '$(Pipeline.Workspace)/drop/$(templateFile)'
-              overrideParameters: '-storageAccountName $(storageAccountName)'
+              overrideParameters: '-storageAccountName $(storageAccountName) -profileName $(cdnProfileName) -endpointName $(cdnEndpointName)'
               deploymentMode: 'Incremental'
               deploymentName: 'DeployPipelineTemplate'
 
