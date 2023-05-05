@@ -180,7 +180,7 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2021-06-01' = {
       }
     ]
     deliveryPolicy: {
-      description: 'Rewrite and Redirect'
+      description: 'HTTPS Only'
       rules: [
         {
           name: 'HttpVersionBasedRedirect'
