@@ -1,0 +1,84 @@
+trigger:
+- master
+
+variables:
+  serviceConnectionId: '2d1208e1-f9fa-4bad-9ec9-a099e37b60f4'
+  azureServiceConnection: 'niobium-company-website'
+  resourceGroupName: 'niobium-company-website'
+  storageAccountName: 'niobiumcompanywebsite'
+  vmImageName: 'windows-latest'
+  workingDirectory: '$(System.DefaultWorkingDirectory)/'
+  templateFile: 'main.bicep'
+
+stages:
+- stage: Build
+  displayName: Build stage
+
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+
+    - task: CopyFiles@2
+      displayName: 'Stage static website'
+      inputs:
+        Contents: '$(workingDirectory)/src'
+        TargetFolder: $(Build.ArtifactStagingDirectory)/src
+
+    - task: CopyFiles@2
+      displayName: 'Stage bicep template'
+      inputs:
+        Contents: '$(workingDirectory)/$(templateFile)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+
+    - task: CopyFiles@2
+      displayName: 'Stage scripts'
+      inputs:
+        Contents: '$(workingDirectory)/scripts'
+        TargetFolder: $(Build.ArtifactStagingDirectory)/scripts
+
+    - publish: $(Build.ArtifactStagingDirectory)
+      artifact: drop
+
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  condition: succeeded()
+
+  jobs:
+  - deployment: Deploy
+    displayName: Deploy
+    environment: 'production'
+    pool:
+      vmImage: $(vmImageName)
+
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureResourceManagerTemplateDeployment@3
+            displayName: 'Infrastructure Provisioning'
+            inputs:
+              deploymentScope: 'Resource Group'
+              azureResourceManagerConnection: '$(azureServiceConnection)'
+              action: 'Create Or Update Resource Group'
+              resourceGroupName: '$(resourceGroupName)'
+              location: '$(location)'
+              templateLocation: 'Linked artifact'
+              csmFile: '$(Pipeline.Workspace)/drop/$(templateFile)'
+              overrideParameters: '-storageAccountName $(storageAccountName)'
+              deploymentMode: 'Incremental'
+              deploymentName: 'DeployPipelineTemplate'
+
+            - task: AzureFileCopy@3
+              displayName: 'AzureBlob File Copy'
+              inputs:
+                SourcePath: '$(Pipeline.Workspace)/drop/src'
+                azureSubscription: $(azureServiceConnection)
+                Destination: AzureBlob
+                storage: $(storageName)
+                ContainerName: '$web'
+                CleanTargetBeforeCopy: true
