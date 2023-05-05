@@ -7,7 +7,7 @@ variables:
   resourceGroupName: 'niobium-company-website'
   storageAccountName: 'niobiumcompanywebsite'
   vmImageName: 'windows-latest'
-  workingDirectory: '$(System.DefaultWorkingDirectory)/'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
   templateFile: 'main.bicep'
 
 stages:
