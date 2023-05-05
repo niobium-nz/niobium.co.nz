@@ -179,6 +179,37 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2021-06-01' = {
         }
       }
     ]
+    deliveryPolicy: {
+      description: 'Rewrite and Redirect'
+      rules: [
+        {
+          name: 'HttpVersionBasedRedirect'
+          order: 1
+          conditions: [
+            {
+              name: 'RequestScheme'
+              parameters: {
+                typeName: 'DeliveryRuleRequestSchemeConditionParameters'
+                operator: 'Equal'
+                matchValues: [
+                  'HTTP'
+                ]
+              }
+            }
+          ]
+          actions: [
+            {
+              name: 'UrlRedirect'
+              parameters: {
+                typeName: 'DeliveryRuleUrlRedirectActionParameters'
+                redirectType: 'Found'
+                destinationProtocol: 'Https'
+              }
+            }
+          ]
+        }
+      ]
+    ]
   }
 }
 
