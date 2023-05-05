@@ -108,7 +108,7 @@ resource deploymentScript 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
 }
 
 var originUrl = storageAccount.properties.primaryEndpoints.web
-var originHost = split(split(backupBlobContainerUri, '//')[1], '/')[0]
+var originHost = split(split(originUrl, '//')[1], '/')[0]
 
 resource profile 'Microsoft.Cdn/profiles@2021-06-01' = {
   name: profileName
