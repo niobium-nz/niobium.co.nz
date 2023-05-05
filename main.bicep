@@ -108,6 +108,7 @@ resource deploymentScript 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
 }
 
 var originUrl = storageAccount.properties.primaryEndpoints.web
+var originHost = take(split(take(skip(split(originUrl, '//'), 1), 1), '/'), 1)
 
 resource profile 'Microsoft.Cdn/profiles@2021-06-01' = {
   name: profileName
@@ -122,7 +123,7 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2021-06-01' = {
   name: endpointName
   location: location
   properties: {
-    originHostHeader: originUrl
+    originHostHeader: originHost
     isHttpAllowed: true
     isHttpsAllowed: true
     queryStringCachingBehavior: 'IgnoreQueryString'
@@ -174,7 +175,7 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2021-06-01' = {
       {
         name: 'origin1'
         properties: {
-          hostName: originUrl
+          hostName: originHost
         }
       }
     ]
