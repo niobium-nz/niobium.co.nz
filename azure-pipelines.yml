@@ -25,7 +25,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Stage static website'
       inputs:
-        Contents: '$(workingDirectory)/src'
+        Contents: '$(workingDirectory)/src/**'
         TargetFolder: $(Build.ArtifactStagingDirectory)/src
 
     - task: CopyFiles@2
@@ -37,7 +37,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Stage scripts'
       inputs:
-        Contents: '$(workingDirectory)/scripts'
+        Contents: '$(workingDirectory)/scripts/**'
         TargetFolder: $(Build.ArtifactStagingDirectory)/scripts
 
     - publish: $(Build.ArtifactStagingDirectory)
