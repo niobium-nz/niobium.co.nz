@@ -37,7 +37,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Stage scripts'
       inputs:
-        Contents: '$(workingDirectory)/scripts/**'
+        Contents: '$(workingDirectory)/scripts/*.ps1'
         TargetFolder: $(Build.ArtifactStagingDirectory)
 
     - publish: $(Build.ArtifactStagingDirectory)
