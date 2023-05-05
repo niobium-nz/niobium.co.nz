@@ -79,6 +79,6 @@ stages:
               SourcePath: '$(Pipeline.Workspace)/drop/src'
               azureSubscription: $(azureServiceConnection)
               Destination: AzureBlob
-              storage: $(storageName)
+              storage: $(storageAccountName)
               ContainerName: '$web'
               CleanTargetBeforeCopy: true
