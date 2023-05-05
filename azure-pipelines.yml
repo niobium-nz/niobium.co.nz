@@ -26,7 +26,7 @@ stages:
       displayName: 'Stage static website'
       inputs:
         Contents: '$(workingDirectory)/src/**'
-        TargetFolder: $(Build.ArtifactStagingDirectory)/src
+        TargetFolder: $(Build.ArtifactStagingDirectory)
 
     - task: CopyFiles@2
       displayName: 'Stage bicep template'
@@ -38,7 +38,7 @@ stages:
       displayName: 'Stage scripts'
       inputs:
         Contents: '$(workingDirectory)/scripts/**'
-        TargetFolder: $(Build.ArtifactStagingDirectory)/scripts
+        TargetFolder: $(Build.ArtifactStagingDirectory)
 
     - publish: $(Build.ArtifactStagingDirectory)
       artifact: drop
