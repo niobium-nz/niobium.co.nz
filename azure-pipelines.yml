@@ -6,6 +6,8 @@ variables:
   azureServiceConnection: 'niobium-company-website'
   resourceGroupName: 'niobium-company-website'
   storageAccountName: 'niobiumcompanywebsite'
+  cdnProfileName: '$(storageAccountName)CDN'
+  cdnEndpointName: '$(storageAccountName)Endpoint'
   vmImageName: 'windows-latest'
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   templateFile: 'main.bicep'
@@ -82,3 +84,12 @@ stages:
               storage: $(storageAccountName)
               ContainerName: '$web'
               CleanTargetBeforeCopy: true
+              
+          - task: AzureCLI@2
+            displayName: 'Purge CDN'
+            inputs:
+              azureSubscription: $(azureServiceConnection)
+              scriptType: "ps"
+              scriptLocation: inlineScript
+              inlineScript: |
+                az cdn endpoint purge -g $(resourceGroupName) --profile-name $(cdnProfileName) --name $(cdnEndpointName) --no-wait --content-paths "/*"
