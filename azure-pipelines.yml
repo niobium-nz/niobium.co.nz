@@ -83,6 +83,8 @@ stages:
               scriptType: 'InlineScript'
               Inline: |
                 Write-Host '$(bicepOutputs)'
+              azurePowerShellVersion: 'latestVersion'
+              pwsh: true
 
           - task: AzureFileCopy@3
             displayName: 'AzureBlob File Copy'
