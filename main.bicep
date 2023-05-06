@@ -215,4 +215,4 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2021-06-01' = {
 
 output staticWebsiteUrl string = originUrl
 output originHostHeader string = endpoint.properties.originHostHeader
-output hostName string = endpoint.properties.hostName
+output cdnHostName string = endpoint.properties.hostName
