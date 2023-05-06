@@ -74,6 +74,15 @@ stages:
               overrideParameters: '-storageAccountName $(storageAccountName) -profileName $(cdnProfileName) -endpointName $(cdnEndpointName)'
               deploymentMode: 'Incremental'
               deploymentName: 'DeployPipelineTemplate'
+              deploymentOutputs: 'bicepOutputs'
+
+          - task: AzurePowerShell@4
+            displayName: Print bicep result
+            inputs:
+              azureSubscription: $(azureServiceConnection)
+              scriptType: 'InlineScript'
+              Inline: |
+                Write-Host '$(bicepOutputs)'
 
           - task: AzureFileCopy@3
             displayName: 'AzureBlob File Copy'
