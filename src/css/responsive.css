@@ -1,0 +1,2815 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Base Media Query
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 320px) {
+    .container {
+        max-width: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .sm-clean .sm-nowrap>li>a, .sm-clean .sm-nowrap>li>:not(ul) a {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 1080px;
+    }
+}
+
+@media (min-width: 1201px){
+    .container {
+        max-width: 1200px;
+    }
+
+  	.video-title {
+  		left: 22%;
+  	}
+
+	.niobium .blog-block .container {
+		max-width: 1260px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.video-title {
+		left: 5%;
+	}
+
+	.irhas3 .portfolio-home3 {
+		padding: 303px 0 0 0;
+	}
+
+	.irhas3.about3 .team-block-home2 {
+		padding: 294px 40px 100px;
+	}
+
+	.irhas3.about3 .testimonial-home2-block {
+		padding: 288px 40px 100px;
+	}
+
+	.niobium.about .partner-block .partner-loop {
+		padding: 18px 5px 0 0;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 50px;
+	}
+
+	.irhas3 .about-block .smart-object2 img {
+		margin: -160px 20px 20px -20px;
+	}
+
+	.irhas3.about3 .smart-object {
+		margin: 0 0 0 90px;
+	}
+
+	.irhas3.about3 .smart-object2 img  {
+		margin: -160px 0 20px 13px;
+	}
+
+	.irhas3.about3 .smart-object3 img {
+		margin-left: 50px;
+	}
+
+	.irhas2 .button-portfolio-wrap {
+		padding-right: 10px;
+	}
+
+	.niobium .blog-loop-wrap {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.items-start {
+		padding-left: 0;
+	}
+
+	.niobium .portfolio-block .portfolio-wrap {
+		padding: 0;
+	}
+}
+
+@media (max-width: 1024px){
+	body .thaw-container,.container {
+		max-width: 960px;
+	}
+
+	.header-content-right {
+		display: none;
+	}
+
+	#header .header-content-left {
+		grid-column: span 12 / span 12;
+	}
+
+	.logo {
+		max-width: 150px;
+	}
+
+	.main-nav {
+		left: -40px;
+	}
+
+	.counter-item {
+		text-align: center;
+	}
+
+	.niobium section.about-block .about-image {
+		grid-column: span 12 / span 12;
+	}
+
+	.niobium section.about-block .about-desc {
+		grid-column: span 12 / span 12;
+	}
+
+	section.about-block-about .about-image,
+	section.about-block-about .about-desc {
+		grid-column: span 12 / span 12;
+	}
+
+	section.about-block-about .about-desc  {
+		margin-top: 30px;
+	}
+
+	.niobium .service-block {
+		padding: 0 0 60px 0;
+		background-color: #009A67;
+		max-height: 100%;
+		height: 100%;
+	}
+
+	.service-style-2 .service-thumb img {
+		width: 100%;
+	}
+
+	.niobium .portfolio-item-loop {
+		padding: 50px 0 0;
+	}
+
+	div#main-wrapper {
+		overflow-x: hidden;
+	}
+
+	.team-style-1 .team-container img {
+		width: 100%;
+	}
+
+	span.divider-counter {
+	    height: 4px;
+	    background-color: #009A67;
+	    width: 15%;
+	    display: flex;
+	    vertical-align: middle;
+	    top: 40px;
+	    position: relative;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	.desc-counter p {
+		font-size: 16px;
+		margin-top: 0px;
+	}
+
+	.number-counter {
+		justify-content: center;
+	}
+
+	.niobium h3.counter-number, .niobium .number-counter span, .irhas3 h3.counter-number, .irhas3 .number-counter span {
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 0;
+	}
+
+	.niobium .about-wrap {
+		padding: 100px 0 30px;
+	}
+
+	.niobium .portfolio-block {
+		padding: 50px 0;
+	}
+
+	.niobium section.team-block {
+		padding: 50px 0;
+	}
+
+	.niobium .team-wrap {
+		padding: 0 0 50px 0;
+	}
+
+	.niobium .team-style-2 .team-member .desc-style {
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+
+	.niobium .button-team {
+		top: 50%;
+		transform: translate(0px, -50%);
+	}
+
+	.niobium .team-style-2 .team-member .team-profile h4 {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+
+	.niobium .blog-block {
+		padding: 200px 0 100px 0;
+	}
+
+	.niobium .testimonial-style-2 .swiper-container {
+		height: 400px;
+	}
+
+	.blog-sidebar .post-inner-content h5 a, .blog-sidebar .meta-info .date a span {
+		font-size: 11px;
+	}
+
+	.blog-sidebar .post-inner-content h5 {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+
+	.niobium.about .about-wrap {
+		padding: 80px 0;
+	}
+
+	.irhas2.service .service-style-2 {
+		min-height: 300px;
+	}
+
+	.irhas2 .testimonial-style-1 figure.swiper-image {
+		width: auto;
+	}
+
+	.irhas2 .about2-video-wrap, 
+	.irhas2 .about2-title-wrap{
+		grid-column: span 12 /span 12;
+	}
+
+	.irhas2 .smart-object {
+		width: 75%;
+		margin: 0 20px 0 155px;
+	}
+
+	.irhas2 .smart-object2 {
+		margin: -364px 160px 0 60px;
+	}
+
+	.irhas2 .about2-home2-block h2.the-title {
+		padding: 0;
+	}
+
+	.irhas2 .about2-home2-block .the-desc {
+		padding-right: 20px;
+	}
+
+	.irhas2.about .about2-home2-block {
+		padding: 50px 0;
+	}
+
+	.irhas2.about .service-about2-block .item-left-service2 {
+		width: 100%;
+	}
+
+	.irhas2.about .service-about2-wrap .item-right-service2 {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.irhas2.about .service-about2-block .item-left-service2 img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.irhas2 .about2-title-wrap {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.irhas2.home2 .about2-home2-block .about2-title-wrap P {
+		max-width: 100%;
+	}
+
+	.irhas2 .service-about2-wrap .the-title {
+		text-align: center;
+		padding: 0 50px;
+	}
+
+	.irhas2 .service-about2-wrap .title-item-service-about2 {
+		text-align: left;
+		padding: 0;
+	}
+
+	.irhas3 span.divider-counter, .niobium span.divider-counter  {
+		display: flex;
+	}
+
+	.navigation-wrap .maps-wrap {
+		order: 10;
+		grid-column: span 12 / span 12;
+	}
+
+	.irhas3.contact3 .maps-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.navigation-wrap .detail-navigation-wrap {
+		grid-column: span 12 / 	span 12;
+	}
+
+	.irhas3 .about-block .about-desc {
+		grid-column: span 12 / span 12;
+		order: 10;
+	}
+
+	.irhas3 .about-block .about-image {
+		grid-column: span 12 / span 12;
+	}
+
+	.irhas3 .smart-object2 img {
+		margin: -270px 20px 20px 15px;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 170px;
+		width: 75%;
+	}
+
+	.irhas3 .title-testimonial {
+		grid-column: span 12 / span 12;
+		padding: 0;
+	}
+
+	.irhas3 .title-testimonial .button-testi {
+		margin-top: 35px;
+	}
+	
+	.irhas3 .testimonial-swiper-wrap {
+		grid-column: span 12/ span 12;
+		margin-top: 50px;
+		order: 10;
+	}
+
+	.irhas3 .smartobject-testi,
+	.irhas3 .smartobject-testi img {
+		width: 100%;
+		height: 380px;
+	}
+
+	.irhas3 .testimonial-detail-inner {
+		height: 380px;
+		padding: 0 50px 0 75px; 
+	}
+
+	.irhas3 .testimonial-style-3 .navigation-swipper {
+		bottom: 55px;
+	}
+
+	.irhas3 .desc-counter p {
+		font-size: 15px;
+	}
+
+	.irhas3.service3 .service-wrapper {
+		padding: 0;
+	}
+
+	.irhas3.about3 .about-block {
+		padding: 50px 30px 20px;
+	}
+
+	.irhas3.about3 .about2-video-wrap {
+		grid-column: span 12/span 12;
+	}
+
+	.irhas3.about3 .about2-title-wrap {
+		margin-top: 30px;
+		grid-column: span 12/span 12;
+	}
+
+	.irhas3.about3 .smart-object img {
+		margin-left: 0;
+	}
+
+	.irhas3.about3 .button-embed-play {
+		left: 50%;
+	}
+
+	.irhas3.about3 .smart-object2 img {
+		margin-top: -400px;
+		margin-left: 70px;
+	}
+
+	.irhas3.about3 .service-about2-block {
+		padding: 0 20px 100px;
+	}
+
+	.irhas3.about3 .item-left-service2,
+	.irhas3.about3 .item-right-service2 {
+		grid-column: span 12 / span 12;
+		padding-left: 0;
+		padding-right: 10px;
+	}
+
+	.irhas3.about3 .service-about2-wrap .the-title {
+		margin-top: 50px;
+	}
+
+	.irhas3.about3 .service-about2-wrap .item-service-about2 .the-title {
+		margin-top: 0;
+	}
+
+	.irhas3.about3 .team-block-home2 {
+		padding: 150px 30px 100px;
+	}
+
+	.irhas3.about3 .team-block-home2 .title-team-wrap,
+	.irhas3.about3 .team-block-home2 .button-team-wrap {
+		grid-column: span 12 /span 12;
+	}
+
+	.irhas3.about3 .testimonial-home2-block {
+		padding: 150px 30px 100px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 {
+		padding: 130px 20px 100px;
+	}
+
+	.irhas3.about3 .testimonial-swiper-wrap {
+		margin-top: 0;
+	}
+
+	.irhas3.about3 .swiper-slide img {
+		width: 65%;
+		margin: auto;
+	}
+
+	.niobium .counter-wrap {
+		gap: 0;
+	}
+
+	.niobium .title-contact-banner .the-title p {
+		padding: 0 200px;
+	}
+
+	.niobium.about .about-block-about .about-image {
+		grid-column: span 12/ span 12;
+	}
+	
+	.niobium.about .about-block-about .about-desc {
+		grid-column: span 12/ span 12;
+		margin-left: 0;
+		margin-top: 50px;
+	}
+
+	.niobium.about .team-wrap {
+		padding: 50px 0 0;
+		row-gap: 0;
+	}
+
+	.niobium.about .team-block .title-team-wrap,
+	.niobium.about .team-block .desc-team-wrap {
+		grid-column: span 12 / span 12;
+	}
+
+	.niobium .team-block {
+		padding: 50px 0;
+	}
+	
+	.niobium .team-style-2 .team-member .team-profile h3 {
+		font-size: 18px;
+	}
+
+	.niobium.about .team-block .desc-team-wrap .desc-team {
+		padding-left: 0;
+		padding-top: 0;
+	}
+
+	.niobium.about .team-style-2 .team-member .title-style {
+		font-size: 18px;
+	}
+
+	.niobium .team-style-2 .team-member .job-style {
+		font-size: 12px;
+	}
+
+	.niobium .team-style-2 .team-profile.text-center,
+	.niobium.about .team-style-2 .team-profile.text-center {
+		padding-top: 45px;
+	}
+
+	.niobium.about .partner-block {
+		padding: 80px 20px;
+	}
+
+	.niobium.about .partner-title-wrap {
+		grid-column: span 12 / span 12;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.niobium.about .partner-logo-wrap {
+		grid-column: span 12 / span 12;
+	}
+
+	.niobium.about .partner-block .partner-loop {
+		padding: 0;
+	}
+
+	.niobium.about .gallery-block .slider-gallery {
+		grid-column: span 12 / span 12;
+		order: 10;
+		padding: 0;
+	}
+
+	.niobium.about .gallery-block .gallery-style-1 {
+		padding-left: 0;
+	}
+
+	.niobium.about .gallery-block .title-gallery-wrap {
+		grid-column: span 12 / span 12;
+		padding: 0;
+	}
+
+	.niobium .about-block .about-image,
+	.niobium .about-block .about-desc {
+		grid-column: span 12 / span 12;
+		padding-left: 0;
+	}
+
+	.navigation-block .title-navigation h2 {
+		margin-bottom: 30px;
+	}
+
+	.contact-form-wrap {
+		padding: 0;
+	}
+
+	.irhas2 .portfolio-title-wrap {
+		margin-bottom: 20px;
+	}
+
+	.irhas2.about .smart-object {
+		margin: 0 0 0 303px;
+		width: 60%;
+	}
+
+	.irhas2.about .smart-object2 {
+		margin: -300px 0 0 85px;
+		width: 80%;
+	}
+
+	.irhas2.about .smart-object3 {
+		margin: -235px 0 80px 125px;
+	}
+
+	.irhas2.about .about2-home2-block .the-desc,
+	.irhas2.about .about2-home2-block p {
+		max-width: 100%;
+	}
+
+	.irhas2.about .service-about2-block .item-left-service2 .the-title {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -60px;
+	}
+	
+	.irhas2.about .service-about2-wrap .item-right-service {
+		padding-left: 0;
+	}
+
+	.irhas2.about .team-block-home2 .button-team-wrap {
+		padding: 0 0 0 60px;
+	}
+
+	.irhas2.project .portfolio-item-loop {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas2.service .service-block-loop {
+		padding: 0;
+	}
+
+	.irhas3 .testimonial-block .testimonial-wrap {
+		margin-left: 0;
+		padding: 0 10px;
+	}
+
+	.irhas3 .testimonial-block {
+		padding: 125px 30px 0;
+	}
+
+	.irhas3.about3 .team-block-home2 .team-wrap,
+	.irhas3.about3 .team-block-home2 .team-loop-wrap {
+		padding: 0;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .title-gallery-wrap-about3,
+	.irhas3.about3 .gallery-block-about3 .testimonial-swiper-wrap {
+		padding: 0;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-slide.swiper-slide-active {
+		margin-top: -5em;
+	}
+
+	.irhas3.about3 .about-block .about2-title-wrap {
+		margin-left: 0;
+	}
+
+	.irhas3.blog .blog-block .blog-item-style-1 .post-thumb-img h3 a {
+		font-size: 20px;
+	}
+
+	.irhas3.contact3 .navigation-block {
+		padding: 50px 0 0 0;
+	}
+
+	.irhas3.contact3 .detail-navigation-wrap {
+		padding: 20px 0 10px;
+	}
+
+	.contact-form-block,
+	.irhas2.contact2 .contact-form-block,
+	.irhas3.contact3 .contact-form-block {
+		padding: 35px 0 90px 0;
+	}
+
+	.niobium .portfolio-block .portfolio-wrap,
+	.niobium .service-block-loop {
+		padding: 0;
+	}
+
+	.service-title-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.niobium.about .smart-object img {
+		height: auto;
+	}
+
+	.service-about2-wrap .item-service-about2:last-child {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.niobium .counter-item,
+	.niobium .counter-item:first-child {
+		padding: 0 10px;
+	}
+
+	.irhas2 .team-block-home2 {
+		padding: 65px 0;
+	}
+
+	.irhas3 .about-block {
+		padding: 50px 30px;
+	}
+
+	.irhas3 .about-block .smart-object img {
+		height: auto;
+	}
+
+	.irhas2.contact2 .maps-wrap {
+		padding-left: 0;
+	}
+
+	.navigation-wrap,
+	.irhas3.contact3 .navigation-wrap {
+		gap: 1rem;
+		row-gap: 0;
+	}
+
+	.navigation-block,
+	.irhas2.contact2 .navigation-block {
+		padding: 50px 0 0;
+	}
+
+	.niobium .items-start {
+		padding-left: 0;
+	}
+
+	.items-start,
+	.single-post-wrap .blog-widgets-wrap {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.irhas3.single-post-3 .blog-sidebar .widget ul li {
+		margin-left: 0;
+	}
+
+	.blog-service .blog-sidebar {
+		padding: 0 15px;
+	}
+
+	.subheader-content-left,
+	.subheader-content-right {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas3 .blog-loop-wrap {
+		gap: 1.5rem;
+		padding: 0 25px;
+	}
+
+	.irhas3.single-project .swiper-container img {
+		width: 100%;
+	}
+
+	.single-service .sidebar {
+		padding-left: 15px;
+	}
+
+	.niobium .blog-loop-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas2 .portfolio-item-loop {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas3 .portfolio-home3 .portfolio-item-loop {
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.irhas2.about .team-block-home2 .team-wrap {
+		padding-left: 20px;
+	}
+
+	.irhas2.about .team-block-home2 .team-loop-wrap {
+		padding: 10px 25px 0 20px;
+		margin-top: 0;
+	}
+
+	.contact2 .detail-navigation-wrap {
+		padding: 35px 0 20px;
+	}
+
+	.irhas2.home2 .team-wrap {
+		padding-left: 15px;
+	}
+
+	.irhas2.home2 .blog-block-home2 .blog-item-style-6 {
+		padding-left: 10px;
+		padding-right: 40px;
+	}
+
+	.irhas3 .service-button {
+		right: 0;
+	}
+
+	.irhas2 .button-portfolio-wrap {
+		padding-right: 0;
+	}
+	
+	.irhas2 .title-portfolio {
+		padding-left: 0;
+	}
+
+	.irhas2.home2 .blog-loop-wrap {
+		padding-right: 0;
+	}
+
+	.niobium.about .gallery-wrap {
+		row-gap: 1.5rem;
+	}
+
+	.detail-text-wrap:last-child {
+		margin-bottom: 0;
+	}
+
+	.detail-text-wrap:last-child {
+		margin-bottom: 10px;
+	}
+
+	.niobium .about-block .image-item2 img {
+		height: auto;
+	}
+
+	.niobium .team-block .the-desc {
+		padding-right: 0;
+	}
+
+	.niobium.service .service-block-home1 .thaw-container {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.niobium.projects .banner-contact-block {
+		padding: 67px 30px;
+	}
+
+	.gallery-block .slider-gallery .swiper-slide img {
+		height: auto;
+	}
+
+	.irhas2 .smart-object img {
+		height: auto;
+	}
+
+	.niobium .service-block-home1 {
+		padding: 100px 0 100px;
+	}
+
+	.irhas3.service .service-block {
+		padding: 80px 0 80px;
+	}
+
+	.irhas3.service .service-wrapper {
+		padding-top: 0;
+	}
+
+	.irhas3.service .service-block-loop {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.niobium .title-contact-banner .the-title p {
+		padding: 0 150px;
+	}
+
+	.irhas2.home2 .blog-block-home2 .blog-item-style-6 {
+		grid-column: span 12 / span 12;
+		padding-left: 10px;
+		padding-right: 40px;
+	}
+
+	.footer-bottom-contact .contact-footer-menu li a,
+	.footer-bottom-holder-home2 .footer-bottom-contact .contact-footer-menu li a {
+		line-height: 22px;
+	}
+
+	.irhas3.single-post-3 .blog-sidebar .post-item:last-child {
+		padding-bottom: 0;
+	}
+
+	.main-nav {
+		left: 0;
+	}
+}
+
+@media (max-width: 768px){
+	.column {
+		float: none;
+		max-width: 100%;
+	}
+	
+	.column-1 {
+		width: 100%;
+	}
+	
+	.column-2 {
+		width: 100%;
+	}
+	
+	.column-3 {
+		width: 100%;
+	}
+	
+	.column-2of3 {
+		width: 100%;
+	}
+	
+	.column-4 {
+		width: 100%;
+	}
+	
+	.column-5 {
+		width: 100%;
+	}
+
+	.column-25 {
+		width: 100%;
+	}
+
+	.column-75 {
+		width: 100%;
+	}
+
+	.sm-clean a span.sub-arrow {
+		position: absolute;
+	    top: 0;
+	    margin-top: 0;
+	    left: auto;
+	    right: 4px;
+	    width: 47px;
+	    height: 44px;
+	    overflow: hidden;
+	    font: bold 16px/34px monospace !important;
+	    text-align: center;
+	    text-shadow: none;
+	    background: #000;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	    -o-border-radius: 5px;
+	    border-radius: 0;
+	    color: #fff;
+		line-height: 44px !important;
+	}
+
+	.main-nav .sub-menu {
+		margin-top: 2px !important;
+		box-shadow: none;
+	}
+
+	.niobium .sm-clean ul,
+	.irhas2 .sm-clean ul,
+	.irhas3 .sm-clean ul {
+		border-top: none;
+	}
+
+	body .thaw-container,
+	body .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header-content-left .logo, .header-content-right {
+		position: absolute;
+		width: 150px;
+		margin-right: 0;
+	}
+
+	.main-nav {
+		top: 0;
+		transform: translate(0, 0);
+	}
+
+	#header .main-nav {
+		display: inline-block;
+		grid-column: span 12/ span 12;
+		justify-content: flex-end;
+	}
+
+	#main-menu {
+		padding: 35px 0 0;
+	}
+
+	.sm-clean ul, .irhas2 .sm-clean ul {
+		border: none;
+		background: #fff;
+	}
+
+	.niobium.blog .header-content-left {
+		padding: 0 30px;
+	}
+
+	.niobium .about-wrap {
+		padding: 60px 0 30px;
+	}
+
+	.niobium .button-about {
+		margin-top: 0;
+	}
+
+	.niobium.about .smart-object img {
+		margin: 0 85px 0 200px;
+	}
+
+	.niobium.about .smart-object2 img {
+		margin: -218px 50px 0px 75px;
+		width: 70%;
+	}
+
+	.niobium.about .smart-object3 img {
+		margin-top: -170px;
+	}
+
+	.niobium .button-about {
+		width: 100%;
+	}
+
+	.niobium .service-button, .niobium .portfolio-button, .niobium .button-team, .niobium .blog-button {
+	    text-align: right;
+	    width: 100%;
+	    top: 50%;
+	    left: 0;
+		width: auto;
+	    transform: translate(0, -50%);
+	}
+
+	.portfolio-block, .about-wrap {
+		padding: 50px 0;
+		row-gap: 4rem;
+	}
+
+	.portfolio-item-loop {
+    	padding: 50px 0;
+	}
+
+	.blog-block {
+		padding-bottom: 50px;
+	}
+
+	.niobium .testimonial-style-2 .testimonial-detail-inner {
+		padding: 30px 15px;
+	}
+
+	section.about-block-about .about-desc {
+		margin-top: 60px;
+	}
+
+	.niobium .team-block .desc-team-wrap .desc-team {
+		padding-left: 0;
+	}
+
+	.niobium.about .partner-block {
+		padding: 80px 0;
+	}
+
+	.niobium.about .partner-title-wrap {
+		padding-right: 0;
+	}
+
+	.niobium .blog-block {
+		padding: 130px 0 100px 0;
+	}
+
+	.widget.widget_search input {
+		max-width: 100%;
+	}
+
+	.footer-widgets-holder,
+	.irhas3 .footer-widgets-holder {
+		padding: 30px 10px 6px;
+	}
+
+	.footer-widgets-holder .footer-widgets2 {
+		display: block;
+	}
+
+	.footer-bottom-lisensi {
+		text-align: center;
+	}
+
+	.footer-bottom-holder .footer-bottom-contact {
+		justify-content: center;
+	}
+
+	.footer-bottom-holder .footer-bottom .footer-bottom-contact ul {
+		text-align: center;
+	}
+
+	.textwidget img {
+		max-width: 200px;
+	}
+
+	.partner-title-wrap {
+		padding-right: 0;
+	}
+
+	.irhas2 .bg-image-block {
+		height: 80vh;
+		background-position: center center;
+	}
+
+	.number-counter.flex {
+		display: inline-flex;
+	}
+
+	p.counter-number, .number-counter span {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.blog-section .post-style-1 .blog-content {
+		position: relative;
+	    background-color: #fff;
+	    padding: 60px;
+	    max-width: 100%;
+	    min-width: auto;
+	    bottom: 0;
+	    -webkit-transform: translateY(50px);
+	    -moz-transform: translateY(50px);
+	    -ms-transform: translateY(50px);
+	    -o-transform: translateY(50px);
+	    transform: translateY(0px);
+	    z-index: 3;
+	}
+
+	.blog-section .post-style-1 .blog-thumb:after {
+		content: '';
+	    display: block;
+	    position: absolute;
+	    top: -40px;
+	    width: 450px;
+	    right: -15px;
+	    bottom: 0;
+	    z-index: 0;
+	    height: calc(100% + 80px);
+	    background: #009a67;
+	}
+
+	.blog-section .post-style-1 .blog-thumb {
+		margin: 0;
+	}
+
+	.blog-section .post-style-1 {
+		padding-right: 20px;
+		margin-bottom: 150px;
+	}
+
+	.blog-section .blog-loop-item.lst-post {
+		margin-bottom: 150px;
+	}
+
+	.blog-section .post-style-1 .blog-title {
+		margin-bottom: 0;
+	}
+
+	.niobium .gallery-block .desc-gallery {
+		max-width: 100%;
+	}
+
+	.niobium.about .gallery-wrap {
+		gap: 2rem;
+	}
+
+	.service-about2-wrap .the-title h2 {
+		text-align: center;
+	}
+
+	.irhas2 .service-about2-wrap .title-item-service-about2 h2 {
+		text-align: left;
+	}
+
+	.title-contact-banner .the-title p {
+		padding: 0;
+	}
+
+	.irhas3 .portfolio-home3 {
+		padding: 150px 0 0 0;
+		height: 1070px;
+		max-height: 100%;
+	}
+
+	.niobium .video-title {
+		left: 22px;
+		max-width: 100%;
+	}
+
+	.play-button {
+		margin-top: 30px;
+	}
+
+	.niobium .about-block .image-item1 {
+		margin: -10px -60px 20px 25px;
+	}
+
+	.niobium .about-block .image-item2 {
+		margin: 80px 40px 20px 90px;
+	}
+
+	.niobium .about-block .image-item4 {
+		margin: -5px 30px 20px -100px;
+	}
+
+	.niobium .banner-contact-block {
+		padding: 50px 40px;
+	}
+
+	.niobium.service .service-style-2 {
+		min-height: 280px;
+	}
+
+	.niobium .subheader-list {
+		display: none;
+	}
+
+	.niobium.about .team-style-2 .key-details {
+		max-width: 300px;
+	}
+
+	.niobium.blog .blog-section.blog-loop {
+		padding-bottom: 100px;
+	}
+
+	.blog-sidebar .post-inner-content h5 a, .blog-sidebar .meta-info .date a span {
+		font-size: 16px;
+	}
+
+	.niobium .title-contact-banner .the-title p {
+		padding: 0 50px;
+	}
+	
+	.header-style-2 #main-menu {
+		float: unset;
+	}
+
+	.irhas2.service .service-block-home1 {
+		padding: 20px 0;
+	}
+
+	.irhas2.blog .blog-block-home2 {
+		padding: 80px 0;
+	}
+
+	.irhas2 h2.the-title {
+		padding: 0;
+	}
+
+	.irhas2 .head-title p {
+		padding: 0 50px;
+	}
+
+	.irhas2 .smart-object2 {
+		margin: -310px 160px 0 15px;
+	}
+
+	.irhas2.project .portfolio-block {
+		padding: 80px 0;
+	}
+
+	.irhas3 .banner-contact-block {
+		padding: 50px 0;
+	}
+
+	.footer-bottom-holder-home2 .footer-bottom-contact {
+		justify-content: center;
+	}
+
+	.contact2 .detail-navigation-wrap {
+		padding: 0;
+	}
+
+	.contact2 .item-detail-contact {
+		padding: 10px 0;
+	}
+
+	.irhas3 .about2-title-wrap {
+		padding-top: 50px;
+	}
+
+	.irhas3 .service-about2-wrap .the-title h2 {
+		text-align: left;
+	}
+
+	.project-details li {
+		display: block;
+		display: block;
+	}
+
+	.single-post-wrap .grid {
+		display: block;
+	}
+	.main-nav li.menu-item{
+		margin-right: 0;
+	}
+	.main-menu-btn{
+		margin: 6px 0;
+	}
+
+	.irhas3 .portfolio-button {
+		text-align: left;
+		top: 13px;
+	}
+
+	.irhas3 .portfolio-block .portfolio-item-loop {
+		padding-top: 79px;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 120px;
+	}
+
+	.irhas3 .smart-object2 img {
+		margin: -270px 20px 20px 0;
+	}
+
+	.irhas3 .about-block .smart-object2 img {
+		margin: -160px 20px 20px 0
+	}
+
+	.irhas3 .about-block {
+		padding: 0 5px;
+	}
+
+	.irhas3 .testimonial-block {
+		padding: 125px 30px 0;
+	}
+
+	.irhas3 .service-block {
+		padding: 150px 0 100px;
+	}
+
+	.irhas3.about3 .smart-object {
+		margin: 0 0 0 95px;
+		width: 85%;
+	}
+
+	.irhas3.about3 .smart-object2 img {
+		margin-top: -221px;
+		margin-left: 0;
+		width: 80%;
+	}
+
+	.irhas3.about3 .swiper-slide img {
+		width: 100%;
+	}
+
+	.irhas3.about3 .service-about2-wrap {
+		gap: 15px;
+	} 
+
+	.irhas3.about3 .item-left-service2 img {
+		margin-bottom: 0;
+	}
+
+	.niobium .title-contact-banner .the-title h2 {
+		line-height: 45px;
+	}
+
+	.niobium.projects .title-contact-banner .the-title p {
+		padding: 0;
+	}
+
+	.irhas2 .portfolio-item-loop {
+		padding: 0;
+	}
+
+	.irhas2.about .smart-object {
+		margin: 0 0 0 155px;
+		width: 75%;
+	}
+
+	.irhas2.about .smart-object2 {
+		margin: -250px 0 0 25px;
+	}
+
+	.irhas2.about .smart-object3 {
+		margin: -204px 0 25px 60px;
+		width: 45%;
+	}
+
+	.irhas2 .banner-header-style2 .title-banner-style2 {
+		padding: 100px 0;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-button {
+		top: 0;
+		left: -15px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-container {
+		padding-top: 145px;
+	}
+
+	.irhas3.blog .blog-loop-wrap {
+		padding: 0;
+	}
+
+	.irhas2.about .smart-object2 {
+		width: 90%;
+	}
+
+	.niobium .counter-item,
+	.niobium .counter-item:first-child {
+		padding: 0;
+	}
+
+	.irhas2 .testimonial-home2-block {
+		padding: 85px 0 105px;
+	}
+
+	.irhas3.project .portfolio-block {
+		padding: 75px 0;
+	}
+
+	.irhas3.service3 .service-block {
+		padding: 70px 0 100px;
+	}
+
+	.irhas3.blog .blog-block {
+		padding: 100px 0;
+	}
+
+	.irhas3.about3 .testimonial-home2-block .testtimonial-home2-bloclk .testimonial-home2-title {
+		padding-left: 0;
+	}
+
+	.irhas3 .testimonial-style-1 .swiper-container {
+		padding: 0;
+	}
+
+	.footer .footer-widgets2 {
+		gap: 2rem;
+	}
+
+	.footer-widgets-holder-home2 {
+		padding: 30px 0;
+	}
+
+	.niobium.service .service-block-loop {
+		/* padding: 0; */
+		margin-top: 0;
+	}
+
+	.niobium.blog .blog-wrap {
+		padding: 0 30px;
+	}
+
+	.blog-section .post-style-1 .blog-content div:nth-child(2) {
+		padding-left: 0;
+	}
+
+	.niobium.blog .blog-widgets-wrap {
+		margin-left: 0;
+	}
+
+	.show-mob {
+		display: block !important;
+	}
+
+	.hide-mob {
+		display: none !important;
+	}
+
+	.content-related-post {
+		margin-bottom: 20px;
+	}
+
+	.content-related-post .post-thumb img {
+		margin-bottom: 20px;
+	}
+
+	.content-related-post .image-desciption-content {
+		margin-left: 0;
+	}
+
+	.single-project-content-wrap {
+		width: 80%;
+	}
+
+	.blog-service .blog-sidebar {
+		padding: 0 15px 20px;
+	}
+
+	.niobium .footer-widgets2 {
+		padding: 0;
+	}
+
+	.niobium .blog-wrap {
+		padding: 0;
+	}
+
+	.irhas3 .about-block .about-desc {
+		padding: 15px 20px 0;
+	}
+
+	.irhas3 .blog-loop-wrap {
+		gap: 3rem;
+	}
+
+	.irhas3 .testimonial-detail-inner {
+		padding: 15px 50px 0 75px;
+	}
+
+	.niobium .team-style-2 .team-profile.text-center, .niobium.about .team-style-2 .team-profile.text-center {
+		padding-top: 30px;
+	}
+
+	.niobium.about .team-loop-wrap {
+		padding: 0;
+	}
+
+	.niobium.about .team-block {
+		padding: 50px 0;
+	}
+
+	.niobium.about .team-wrap {
+		padding: 0;
+	}
+
+	.irhas2.about .service-about2-block .item-left-service2 .the-title {
+		max-width: 500px;
+		margin-top: 0;
+	}
+
+	.irhas3.about3 .testimonial-home2-block .testimonial-home2-title {
+		padding-left: 0;
+	}
+
+	.irhas-service-contact input, .irhas-service-contact textarea {
+		max-width: 100%;
+	}
+
+	.single-service .irhas-service-contact input, .single-service .irhas-service-contact textarea {
+		max-width: 100%;
+	}
+
+	.irhas2 .title-portfolio {
+		padding-left: 0;
+	}
+
+	.irhas2 .button-portfolio-wrap {
+		padding-right: 0;
+	}
+
+	.irhas3 .testimonial-block .testimonial-wrap {
+		padding: 0;
+	}
+
+	.irhas2.about .team-block-home2 .team-loop-wrap {
+		padding: 10px 10px 0 20px;
+	}
+
+	.niobium .team-loop-wrap {
+		padding: 0;
+	}
+
+	.counter-item:first-child,
+	.counter-item,
+	.irhas3 .counter-block .counter-item:last-child {
+		padding: 0 15px;
+	}
+
+	.niobium .blog-content-wrap {
+		padding-right: 15px;
+	}
+
+	.single-post-wrap .blog-widgets-wrap {
+		margin-left: 0;
+	}
+
+	.blog-sidebar .custom-post-widget .post-content {
+		padding-bottom: 15px;
+	}
+
+	.custom-post-widget .post-item:last-child .post-content {
+		margin-bottom: 0;
+	}
+
+	.prev-project,
+	.next-project {
+		width: 50%;
+		float: left;
+	}
+
+	.niobium .testimonial-style-2 .swiper-button {
+		left: 0;
+	}
+
+	.irhas3 .service-title-wrap {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.video-desc {
+		position: relative;
+		display: block;
+	}
+
+	.play-button {
+		position: absolute;
+		top: 100%;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.niobium.about .smart-object img {
+		margin: 0 0 0 135px;
+	}
+
+	.niobium.about .smart-object2 img {
+		margin: -175px 0 0 0;
+		width: 100%;
+	}
+	
+	.niobium.about .smart-object3 img {
+		margin-top: -155px;
+		margin-left: 0;
+		width: 40%;
+	}
+
+	.niobium .about-title h2 {
+		font-size: 27px;
+		line-height: 35px;
+	}
+
+	.niobium.about .about-title h2 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	
+	.niobium .service-title h2, .niobium .title-portfolio h2,
+	.niobium .title-team h2, .niobium .blog-title h2, .niobium .title-testimonial h2 {
+		font-size: 30px;
+	}
+
+	.niobium .service-button a, .niobium .button-team a,
+	.niobium .portfolio-button a, .niobium .blog-button a {
+		padding: 10px 20px;
+	}
+
+	section.navigation-block {
+		padding: 50px 0;
+	}
+
+	.maps-wrap iframe {
+		height: 400px;
+	}
+
+	.navigation-block .navigation-wrap,
+	.irhas3.contact3 .navigation-wrap {
+		grid-gap: 1em;
+		gap: 1em;
+		row-gap: 5rem;
+	}
+
+	section.contact-form-block {
+		padding: 0 0 50px;
+	}
+
+	.irhas2 .about2-home2-block h2.the-title {
+		font-size: 27px;
+	}
+
+	.irhas2 .about-title-home2 p {
+		padding: 0;
+	}
+
+	.irhas2 .about-title-home2 h2 {
+		font-size: 30px;
+	}
+
+	.irhas2 .portfolio-block-home2 .title-portfolio h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.irhas2 .team-block-home2 .title-team h2 {
+		font-size: 30px;
+	}
+
+	.irhas2.about .about2-home2-block h2.the-title,
+	.irhas2 .service-about2-wrap .the-title h2,
+	.irhas2 .team-block-home2 .the-title h2 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.irhas2 .service-about2-wrap .the-title {
+		padding: 0 28px;
+	}
+
+	.irhas2 .service-about2-wrap .title-item-service-about2 {
+		padding: 0;
+	}
+
+	.contact-form-block,
+	.irhas3.contact3 .contact-form-block {
+		padding: 0 0 75px 0;
+	}
+
+	.counter-block .counter-item {
+		grid-column: span 12 / span 12;
+		padding: 0;
+	}
+
+	.counter-item:first-child,
+	.counter-item:last-child,
+	.irhas3 .counter-block .counter-item:last-child {
+		padding: 0;
+	}
+
+	.banner-contact-block .the-title h2,
+	.irhas3 .banner-contact-block .the-title p {
+		text-align: left;
+		max-width: 100%;
+	}
+	
+	.irhas3 .banner-contact-block .the-title p,
+	.irhas3.project .banner-contact-block .the-title p {
+		margin-bottom: 32px;
+	}
+
+	.irhas3 .button-banner-contact {
+		text-align: left;
+	}
+
+	.video-title h1 {
+		font-size: 35px;
+		line-height: 30px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 {
+		padding: 85px 30px 0px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .the-title,
+	.irhas3.about3 .gallery-block-about3 .the-desc {
+		grid-column: span 12 / span 12;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .testimonial-swiper-wrap {
+		margin-top: 15px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-slide.swiper-slide-active {
+		margin-top: -4em;
+	}
+
+	.irhas3.about3 .testimonial-home2-block {
+		display: none;
+	}
+	
+	.the-title h2 {
+		font-size: 30px;
+	}
+
+	.irhas3.about3 .team-block-home2 {
+		padding: 100px 30px 100px;
+	}
+
+	.niobium .blog-block {
+		padding: 80px 0 65px;
+	}
+
+	.niobium .team-block {
+		padding: 45px 0 40px;
+	}
+
+	.niobium .testimonial-block {
+		padding: 80px 0 20px;
+	}
+
+	.niobium .title-contact-banner .the-title h2 {
+		line-height: 35px;
+	}
+
+	.niobium.about .gallery-block {
+		padding: 80px 0;
+	}
+
+	.navigation-block {
+		padding: 50px 0 30px;
+	}
+
+	.irhas3.contact3 .navigation-block {
+		padding: 50px 0 43px;
+	}
+
+	.detail-navigation-wrap {
+		padding: 0;
+	}
+
+	.item-detail-contact,
+	.irhas2.contact2 .item-detail-contact,
+	.irhas3.contact3 .item-detail-contact {
+		padding: 0;
+	}
+
+	.irhas2 .service-item-style-1 {
+		grid-column:  span 12 / span 12;
+	}
+
+	.irhas2 .portfolio-item {
+		grid-column: span 12 / span 12;
+	}
+	
+	.irhas2 .portfolio-block-home2 .portfolio-item-loop {
+		row-gap: 4rem;
+	}
+
+	.irhas2 .about2-home2-block .about2-title-wrap.the-title h2 {
+		font-size: 2.6rem;
+		line-height: 36px;
+	}
+
+	.irhas2 .about-home2-wrap {
+		padding: 30px 0;
+	}
+
+	.irhas2 .portfolio-block-home2 .portfolio-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas2.about .service-about2-wrap .item-service-about2 {
+		grid-column: span 12 / span 12;
+	}
+
+	.irhas2.about .team-block-home2 .team-wrap {
+		padding-right: 25px;
+		gap: 0;
+	}
+
+	.irhas2.about .team-block-home2 .title-team-wrap {
+		grid-column: span 12 / span 12;
+	}
+
+	.irhas2.about .team-block-home2 .button-team-wrap {
+		grid-column: span 12 /  span 12;
+		padding: 0;
+	}
+
+	.irhas2.about .testimonial-home2-block {
+		display: none;
+	}
+
+	.irhas2.about .about2-home2-block .about2-title-wrap .the-title h2 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.irhas2.about .service-about2-wrap .title-item-service-about2 h2 {
+		font-size: 24px;
+	}
+
+	.irhas3 .the-title h1 {
+		font-size: 30px;
+	}
+
+	.irhas3 .about-block .about-desc {
+		padding: 0;
+	}
+
+	.irhas3 .portfolio-block .portfolio-wrap,
+	.irhas3 .service-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas3 .testimonial-block {
+		padding: 125px 0 0;
+	}
+
+	.irhas3 .counter-wrap {
+		gap: 0;
+		row-gap: 4rem;
+		padding: 50px 0;
+	}
+
+	.irhas3 .blog-loop-wrap {
+		padding: 0;
+		gap: 2rem;
+		row-gap: 3rem;
+	}
+
+	.irhas3 .testimonial-detail-inner {
+		padding: 15px 35px;
+	}
+
+	.testimonial-style-3 .testimonial-detail-inner h3 {
+		font-size: 20px;
+	}
+
+	.irhas3 .testimonial-style-3 .navigation-swipper {
+		bottom: 80px;
+	}
+
+	.irhas3 .blog-block {
+		padding: 30px 0 50px;
+	}
+
+	.irhas3 .counter-block {
+		padding: 0;
+	}
+
+	.irhas3.project .portfolio-block .portfolio-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas3.project .portfolio-block .portfolio-item-loop {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.irhas3.about3 .title-gallery-wrap-about3 .the-desc {
+		margin-top: 0;
+		padding-left: 0;
+	}
+
+	.irhas3.about3 .item-left-service2 .the-title h2 {
+		line-height: 40px;
+	}
+
+	.irhas3.blog .blog-block .blog-item-style-1 .post-thumb-img h3 a {
+		font-size: 24px;
+	}
+
+	.irhas3.blog .blog-block {
+		padding: 50px 0;
+	}
+
+	.niobium .about-block .the-title h2 {
+		font-size: 27px;
+		line-height: 35px;
+	}
+
+	.niobium .counter-item,
+	.niobium .counter-item:first-child {
+		padding: 20px 0;
+	}
+
+	.irhas2  .blog-block-home2 {
+		padding: 50px 0 30px;
+	}
+
+	.niobium.projects .portfolio-block {
+		padding: 80px 0;
+	}
+
+	.irhas2.home2 .blog-block-home2 .blog-item-style-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.niobium .portfolio-block {
+		padding: 50px 0 62px;
+	}
+
+	.related-service-section h2.section-title {
+		font-size: 2.6rem;
+	}
+
+	.irhas-gallery-project .swiper-button-next, .irhas-gallery-project .swiper-container-rtl .swiper-button-prev {
+		width: 4.5rem;
+		height: 4.5rem;
+		right: 10px;
+	}
+
+	.irhas-gallery-project .swiper-button-prev, .irhas-gallery-project .swiper-container-rtl .swiper-button-next {
+		width: 4.5rem;
+		height: 4.5rem;
+		left: 10px;
+	}
+
+	.highlighted-text {
+		line-height: 3.5rem;
+	}
+
+	.single-head .title-content h1 {
+		font-size: 3rem;
+	}
+
+	.blog-single .post-author .author-ava img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.blog-single .post-author .author-desc {
+		text-align: center;
+	}
+
+	.icf-field, .irhas2.contact2 .icf-field{
+		margin-bottom: 5px;
+	}
+
+	.icf-field:last-child {
+		display: block;
+		margin-top: 10px;
+	}
+
+	span.icf-button-text, .contact2 span.icf-button-text,
+	.contact3 span.icf-button-text {
+		padding: 15px 72px 15px 72px;
+	}
+
+	.blog-section .post-style-1 .blog-title {
+		font-size: 2rem;
+	}
+
+	.blog-section .button-style-1>a {
+		max-height: 50px;
+	}
+
+	.blog-section .button-style-1 span {
+		height: 50px;
+	}
+
+	.irhas2 .about2-home2-block {
+		padding: 50px 0;
+	}
+
+	.irhas2.home2 .about2-video-wrap {
+		padding-top: 0;
+	}
+
+	.irhas3.service .service-wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 640px){
+	.niobium ul#main-menu {
+		padding-top: 30px;
+	}
+
+	.irhas2 ul#main-menu {
+		padding-top: 30px;
+		width: 100%;
+	}
+
+	.irhas3 ul#main-menu {
+		padding-top: 30px;
+		width: 100%;
+	}
+
+	.subheader {
+		display: none;
+	}
+
+	.subheader-list {
+		display: none!important;
+	}
+
+	.niobium .counter-item, .irhas3 .counter-item {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.service-button  {
+		text-align: left;
+	}
+
+	.service-block {
+	    padding: 50px 0;
+	    max-height: 100%;
+	    height: 100%;
+	}
+
+	.service-button {
+		top: 0;
+	}
+
+	.service-style-2 .service-thumb img {
+		width: 100%;
+	}
+
+	.niobium.about .slider-gallery {
+		top: 320px;
+	}
+
+	.blog-section .post-style-1 .blog-content {
+		padding: 30px;
+	}
+
+	p.copyright-footer {
+		text-align: center;
+	}
+
+	.footer-bottom-holder .footer-bottom .footer-bottom-contact ul {
+		text-align: center;
+	}
+
+	.footer-bottom-contact .contact-footer-menu li {
+		float: unset;
+		display: inline-block;
+		position: relative;
+	}
+
+	.irhas2 .bg-image-block {
+		height: 65vh;
+		background-position: center center;
+		min-height: 400px;
+	}
+
+	.irhas2 h2.the-title {
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.irhas2 .head-title {
+		text-align: left;
+		padding: 115px 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	.irhas2 .button-head {
+		padding-top: 10px;
+	}
+
+	.head-title p, .irhas2 .head-title p {
+		padding: 0;
+	}
+
+	.button-head {
+		text-align: center;
+	}
+
+	h2.the-title {
+		font-size: 30px;
+		line-height: 1.4em;
+	}
+
+	.portfolio-block-home2 .portfolio-item {
+		margin-bottom: 50px;
+	}
+
+	.portfolio-block-home2 .portfolio-item-loop {
+		padding: 30px 0;
+	}
+
+	.portfolio-block-home2 .portfolio-button {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.irhas2 .smart-object {
+		margin: 0 20px 0 72px;
+	}
+
+	.irhas2 .smart-object2 {
+		margin: -240px 160px 0 42px;
+	}
+
+	.team-block-home2 .button-team {
+		text-align: left;
+	}
+
+	.detail-navigation-wrap {
+		padding-left: 0;
+	}
+
+	.irhas2 .sm-clean a span.sub-arrow {
+		background-color: #000;
+		color: #fff;
+		border-radius: 0;
+	}
+
+	.niobium .sm-clean a:hover {
+		color: #02ad88;
+	}
+
+	.blog-section .post-style-1 {
+		padding-right: 0;
+	}
+
+	.blog-section.blog-loop {
+		padding: 0 30px;
+	}
+
+	.blog-section .post-style-1 .blog-thumb:after {
+	    width: 335px;
+	    right: -38px;	    
+	}
+
+	.icf-field.col-span-12.flex.justify-end {
+		justify-content: flex-start;
+	}
+
+	.niobium .partner-item img {
+		width: 100%;
+	}
+
+	.niobium .service-button {
+		text-align: left;
+		float: unset;
+	}
+
+	.niobium .portfolio-button {
+		text-align: left;
+		float: unset;
+		margin-top: 10px;
+	}
+
+	.niobium .button-team {
+		text-align: left;
+		float: unset;
+		top: 20px;
+	}
+
+	.niobium .team-wrap {
+		padding: 0 0 56px 0;
+	}
+
+	.niobium .blog-button {
+		text-align: left;
+		float: unset;
+		top: 26px;
+	}
+
+	.niobium .blog-loop-wrap {
+		padding-top: 44px;
+	}
+
+	.niobium .testimonial-style-2 .swiper-wrapper .swiper-slide img {
+		width: 100%;
+	}
+
+	.testi-text {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.niobium .video-title {
+		max-width: 85%;
+		left: 5%;
+	}
+
+	.niobium .video-title h1 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.niobium .title-service-wrap {
+		margin-bottom: 20px;
+	}
+
+	.niobium .title-contact-banner .the-title h2, .irhas3 .title-contact-banner .the-title h2 {
+		font-size: 24px;
+		text-align: left;
+	}
+
+	.niobium .title-contact-banner .the-title p, .irhas3 .title-contact-banner .the-title p, .irhas3 .banner-contact-block .title-contact-banner {
+		text-align: left;
+	}
+
+	.niobium .banner-contact-block .title-contact-banner {
+		text-align: left;
+	}
+
+	.niobium .banner-contact-block {
+		padding: 50px 10px;
+	}
+
+	section.navigation-block {
+		height: 134vh;
+	}
+
+	.maps-wrap iframe {
+		width: 100%;
+	}
+
+	.irhas2 .about-title-home2 {
+		text-align: left;
+	}
+
+	.irhas2 .team-block-home2 .button-team {
+		text-align: center;
+		top: 10px;
+		margin-bottom: 45px;
+		justify-content: center;
+	}
+
+	.irhas2 .team-block-home2 .desc-team {
+		margin-top: 0;
+	}
+
+	.irhas2.service .service-block-home1 {
+		padding: 20px 0;
+	}
+
+	.irhas2 .testimonial-home2-block {
+		display: none;
+	}
+
+	.irhas2 .blog-block-home2 .blog-title h3 {
+		line-height: 45px;
+	}
+
+	.blog-block-home2 .blog-loop-wrap {
+		padding-right: 20px;
+	}
+
+	.irhas2 .about2-title-wrap {
+		margin-top: 50px;
+	}
+
+	.irhas3 .service-button {
+		justify-content: flex-start;
+		top: 0;
+		right: 0;
+	}
+
+	.irhas3 .service-style-2 {
+		min-height: 320px;
+	}
+
+	.niobium .title-contact-banner .the-title p, .niobium.projects .title-contact-banner .the-title p {
+		padding: 0;
+	}
+
+	.contact-footer-menu ul {
+		text-align: center;
+	}
+
+	.footer-widgets-holder-home2 .footer-widget .custom-post-widget .post-content .post-inner-content h5 a {
+		font-size: 14px;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 100px;
+	}
+
+	.irhas3.about3 .about-block .smart-object {
+		margin: 0 0 0 60px;
+	}
+
+	.irhas3 .smart-object2 img {
+		margin: -170px 20px 20px 0;
+	}
+
+	.irhas3 .portfolio-home3{
+		height: 2070px;
+		padding: 85px 0 0 0;
+	}
+
+	.irhas3.about3 .about-block {
+		padding: 50px 10px 20px;
+	}
+
+	.irhas3.about3 .smart-object2 img {
+		margin-top: -185px;
+	}
+
+	.irhas3.about3 .team-block-home2 {
+		padding: 100px 10px 50px;
+	}
+
+	.irhas3.about3 .service-about2-block {
+		padding: 0 10px 100px;
+	}
+
+	.irhas3.blog .blog-loop-wrap {
+		gap: 0;
+	}
+
+	.irhas3.blog .blog-item-style-1 {
+		margin-bottom: 30px;
+	}
+
+	.irhas2.home2 .team-wrap {
+		padding-left: 0;
+	}
+
+	.irhas2 .footer-widgets2 {
+		gap: 3rem;
+	}
+
+	.irhas2.home2 .blog-block-home2 .blog-item-style-6 {
+		padding-left: 0;
+	}
+
+	.irhas2.home2 .portfolio-block-home2 .portfolio-item {
+		margin-bottom: 0;
+	}
+
+	.irhas2.about .smart-object {
+		margin: 0 0 0 125px;
+		border-width: 2px;
+	}
+
+	.irhas2.about .smart-object2 {
+		margin: -175px 0 0 25px;
+	}
+
+	.irhas2.service .service-block-loop {
+		gap: 1.5rem;
+		row-gap: 3rem;
+		margin-top: 0;
+	}
+
+	.irhas3 .testimonial-style-3 .navigation-swipper {
+		left: 0;
+	}
+
+	.irhas3.about3 .desc-team {
+		top: 35%;
+	}
+
+	.niobium .video-item {
+		top: 90px;
+		left: 0;
+	}
+
+	.title-navigation {
+		margin-bottom: 0;
+	}
+
+	.blog-single .post-author .author-ava {
+		float: unset;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.blog-sidebar .post-inner-content h5 {
+		line-height: 22px;
+	}
+
+	.single-service .post-thumb .inner-img {
+		padding: 0 20px;
+		padding-bottom: 25px;
+	}
+
+	.irhas2 .service-item-style-1 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.irhas3 .smartobject-testi, .irhas3 .smartobject-testi img {
+		height: 350px;
+	}
+
+	.irhas2.about .button-embed-play i {
+		padding: 10px
+	}
+
+	.irhas2.about .team-block-home2 .team-loop-wrap {
+		padding: 10px 20px 0;
+	}
+
+	.single-service .post-thumb .inner-img .category .the-category {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	.single-service .post-thumb .inner-img .title-content h2 {
+		font-size: 25px;
+	}
+	
+	.single-service .post-thumb .inner-img .standard-post-date {
+		margin-top: -10px;
+	}
+
+	.irhas2 .blog-block-home2 .blog-loop-wrap {
+		padding-right: 0;
+	}
+
+	.irhas2 .blog-block-home2 .blog-content-wrap {
+		padding-left: 0;
+		padding-right: 5px;
+	}
+
+	.irhas2.home .button-team-wrap {
+		padding-right: 0;
+	}
+
+	.irhas2 .about2-title-wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.niobium .blog-section.blog-loop {
+		padding: 0 25px 0 0;
+	}
+
+	.niobium .video-item .play-button i, .irhas2 .smart-object .play-button i {
+		font-size: 17px;
+		padding: 10px;
+	}
+
+	.irhas2 .blog-block-home2 .blog-item-style-6 {
+		padding-left: 0;
+	}
+
+	.irhas3 .portfolio-style-1 .portfolio-grid-content {
+		padding: 30px 15%;
+	}
+
+	.wp-block-group__inner-container {
+		margin-bottom: 0;
+	}
+
+	.blog-single .the-content p img {
+		margin-top: 6px;
+	}
+
+	.irhas3.about3 .smart-object3 img {
+		margin-top: -180px;
+		margin-left: 20px;
+	}
+
+	.irhas3.about3 .about2-title-wrap {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.niobium.blog .header-content-left {
+		padding: 0 10px;
+	}
+
+	.niobium.about .smart-object img {
+		margin: 0 0 0 40px;
+		width: 100%;
+	}
+
+	.niobium.about .smart-object2 img {
+		margin: -148px 0 0 0;
+		width: 100%;
+	}
+
+	.niobium.about .smart-object3 img {
+		margin-top: -140px;
+	}
+
+	.niobium .about-block .image-item2 {
+		margin: 31px 0 20px 0px;
+	}
+
+	.niobium .about-block .image-item3 {
+		margin: 30px 0 20px -5px;
+	}
+
+	.niobium.about .slider-gallery {
+		top: 420px;
+	}
+
+	.blog-section .post-style-1 .blog-thumb:after {
+		display: none;
+	}
+
+	.blog-section.blog-loop {
+		width: 100%;
+		padding: 0;
+	}
+
+	.blog-section .post-style-1 {
+		margin-bottom: 30px;
+	}
+
+	.blog-section .blog-loop-item.lst-post {
+		margin-bottom: 55px;
+	}
+
+	.blog-content .blog-inner-content {
+		grid-gap: 1em;
+		gap: 1em;
+	}
+
+	.irhas2 .smart-object2 {
+		margin: -110px 160px 0 17px;
+	}
+
+	.irhas2 .smart-object {
+		margin: 0 20px 0 55px;
+	}
+
+	.irhas2 .bg-image-block {
+		height: auto;
+	}
+
+	.irhas2.about .smart-object img {
+		border: 2px solid #fff;
+	}
+
+	.irhas2 .about2-home2-block .smart-object3 {
+		margin: -115px 0 0 40px;
+	}
+
+	.footer-widgets-holder-home2 .footer-widgets2 {
+		grid-gap: 1em;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 50px;
+	}
+
+	.irhas3 .smart-object2 img {
+		margin: -130px 20px 20px 0;
+	}
+
+	.irhas3 .button-embed-play i {
+		font-size: 20px;
+		padding: 0;
+		border: 3px solid;
+	}
+
+	.irhas3 .portfolio-home3 {
+		height: auto;
+	}
+
+	.irhas3.about3 .smart-object {
+		margin: 0 0 0 100px;
+	}
+
+	.irhas3.about3 .smart-object2 img {
+		margin-top: -140px;
+		margin-left: 0;
+	}
+
+	.irhas3.about3 .smart-object3 img {
+		margin-top: -145px;
+		border: 3px solid #fff;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-container {
+		padding-top: 125px;
+	}
+
+	.irhas2.about .smart-object {
+		margin: 0 0 0 95px;
+	}
+
+	.irhas2.about .smart-object2 {
+		margin: -140px 0 0 10px;
+	}
+
+	.irhas3 .service-block {
+		padding:  0 0 100px;
+	}
+
+	.irhas3.about3 .gallery-block-about3 .swiper-slide img {
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.niobium.blog .blog-wrap {
+		padding: 0 10px;
+	}
+
+	.niobium .blog-content-wrap {
+		padding-right: 0;
+	}
+
+	.niobium.blog .blog-section.blog-loop {
+		padding-bottom: 80px;
+	}
+
+	.niobium.blog .blog-block {
+		padding: 60px 0 50px;
+	}
+
+	.single-service .post-thumb .inner-img .category .the-category {
+		font-size: 9px;
+		margin-bottom: 5px;
+		padding: 5px 15px;
+	}
+
+	.single-service .post-thumb .inner-img .title-content h2 {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.single-service .post-thumb .inner-img .standard-post-date {
+		font-size: 10px;
+	}
+
+	.niobium.about .team-loop-wrap {
+		padding: 0;
+	}
+
+	.irhas2 .button-embed-play i {
+		font-size: 15px;
+		padding: 0;
+		border: 4px solid;
+	}
+
+	img.alignright,
+	img.alignleft {
+		margin: 0 0 20px;
+		width: 100%;
+	}
+
+	.pagination-project p {
+		font-size: 1.1rem;
+	}
+
+	blockquote {
+		padding: 30px 15px 30px 20px;
+	}
+
+	blockquote::before {
+		left: 0;
+	}
+
+	.blog-single .the-content p img {
+		margin-top: 14px;
+	}
+
+	.irhas3.about3 .team-block-home2 .the-title h2 {
+		margin-bottom: 14px;
+	}
+}	
+
+@media (max-width: 375px) {
+	.niobium.about .smart-object2 img {
+		margin: -100px 0 0 0;
+		width: 80%;
+	}
+
+	.niobium.about .smart-object3 img {
+		margin-top: -100px;	
+	}
+	
+	.niobium .video-item {
+		border: 6px solid #fff;
+	}
+	
+	.niobium .testimonial-style-2 .testimonial-detail-inner {
+		padding: 30px 0;
+	}
+
+	.niobium.about .slider-gallery {
+		top: 485px;
+	}
+
+	.portfolio-wrap .portfolio-item-loop {
+		grid-gap: 1em;
+		gap: 1em;
+		row-gap: 3rem;
+	}
+
+	.irhas2 .service-about-home2 {
+		grid-gap: 1em
+	}
+
+	.irhas2.about .about2-home2-block .smart-object {
+		margin: 0 0 0 65px;
+	}
+
+	.irhas2.about .about2-home2-block .smart-object2 {
+		margin: -110px 0 0 0;
+		width: 100%;
+	}
+
+	.niobium.about .about2-home2-block .smart-object3 {
+		margin: -115px 0 0 20px;
+	}
+
+	.irhas2.project .banner-header-style2 .title-banner-style2 {
+		padding: 80px 0;
+	}
+
+	.irhas3.about3 .smart-object {
+		margin: 0 0 0 50px;
+	}
+
+	.irhas3.about3 .smart-object2 img {
+		margin-top: -85px;
+	}
+
+	.irhas3.about3 .smart-object3 img {
+		margin-top: -120px;
+	}
+
+	.irhas2.about .button-embed-play i {
+		font-size: 15px;
+		padding: 0;
+		border: 4px solid;
+	}
+
+	.irhas-gallery-project .swiper-button-prev, .irhas-gallery-project .swiper-container-rtl .swiper-button-next {
+		left: 15px;
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.irhas-gallery-project .swiper-button-next, .irhas-gallery-project .swiper-container-rtl .swiper-button-prev {
+		right: 15px;
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.irhas2.about .service-about2-block .item-left-service2 .the-title {
+		margin-top: -30px;
+	}
+}
+
+@media (max-width: 320px) {
+	.niobium .portfolio-style-1 {
+		max-width: 278px;
+	}
+
+	.irhas2 .team-block-home2 .the-title h2 {
+		line-height: 45px;
+	}
+
+	.irhas3 .about-block .smart-object {
+		margin: 0 0 0 30px;
+		width: 85%;
+	}
+
+	.irhas3 .about-block .smart-object2 img {
+		margin: -87px 20px 20px 0;
+	}
+
+	.irhas3.about3 .about-block .smart-object {
+		margin: 0 0 0 40px;
+	}
+
+	.irhas3.about3 .smart-object3 img {
+		margin-top: -95px;
+	}
+
+	.pagination-project .column {
+		padding: 3rem 2rem;
+	}
+}
