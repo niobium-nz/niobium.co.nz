@@ -38,10 +38,6 @@ param profileName string = '${storageAccountName}CDN'
 @description('Name of the CDN Endpoint, must be unique')
 param endpointName string = '${storageAccountName}Endpoint'
 
-param customDomainName string = 'www.niobium.co.nz'
-// Create a valid resource name for the custom domain. Resource names don't include periods.
-var customDomainResourceName = replace(customDomainName, '.', '-')
-
 resource contributorRoleDefinition 'Microsoft.Authorization/roleDefinitions@2018-01-01-preview' existing = {
   scope: subscription()
   // This is the Storage Account Contributor role, which is the minimum role permission we can give. See https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#:~:text=17d1049b-9a84-46fb-8f53-869881c3d3ab
@@ -119,18 +115,6 @@ resource profile 'Microsoft.Cdn/profiles@2021-06-01' = {
   location: location
   sku: {
     name: CDNSku
-  }
-}
-
-resource customDomain 'Microsoft.Cdn/profiles/customDomains@2021-06-01' = {
-  name: customDomainResourceName
-  parent: profile
-  properties: {
-    hostName: customDomainName
-    tlsSettings: {
-      certificateType: 'ManagedCertificate'
-      minimumTlsVersion: 'TLS12'
-    }
   }
 }
 
