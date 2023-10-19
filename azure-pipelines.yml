@@ -104,3 +104,22 @@ stages:
               scriptLocation: inlineScript
               inlineScript: |
                 az cdn endpoint purge -g $(resourceGroupName) --profile-name $(cdnProfileName) --name $(cdnEndpointName) --no-wait --content-paths "/*"
+                
+          - task: AzurePowerShell@5
+              inputs:
+              azureSubscription: $(azureServiceConnection)
+              ScriptType: 'InlineScript'
+              azurePowerShellVersion: 'LatestVersion'
+              pwsh: true
+              Inline: |
+                $resourceGroupName = '$(resourceGroupName)'
+                $profileName = '$(cdnProfileName)'
+                $endpointName = '$(cdnEndpointName)'
+                $customDomainName = 'www.niobium.co.nz'
+                $customDomainSymbolicName = $customDomainName.Replace('.', '-')
+                $domains = Get-AzCdnCustomDomain -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName
+                if ($domains.Count -eq 0) {
+                  New-AzCdnCustomDomain -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -Name $customDomainSymbolicName -HostName $customDomainName
+                  $customDomainHttpsParam = New-AzCdnManagedHttpsParametersObject -CertificateSource Cdn -ProtocolType ServerNameIndication -CertificateSourceParameterCertificateType Dedicated
+                  Enable-AzCdnCustomDomainCustomHttps -CustomDomainHttpsParameter $customDomainHttpsParam -CustomDomainName $customDomainSymbolicName -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName
+                }
