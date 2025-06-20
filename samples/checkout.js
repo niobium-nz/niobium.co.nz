@@ -3,19 +3,20 @@ let currency;
 let elements;
 let amount;
 
-initialize("nzd", "pk_test_51RSwkoRt21XMpal88MegWydqv4YnluqxPMXXCrh0EGbYJEUokmgwZkHxf18BiCrurjrRaWbqwf0hygdKUBdo5IlP00s8EmNX99");
+initialize("nzd", 988, "pk_test_51RSwkoRt21XMpal88MegWydqv4YnluqxPMXXCrh0EGbYJEUokmgwZkHxf18BiCrurjrRaWbqwf0hygdKUBdo5IlP00s8EmNX99");
 
 document
     .querySelector("#payment-form")
     .addEventListener("submit", handleSubmit);
 
-function initialize(c, key) {
-    currency = c;
+function initialize(amt, crc, key) {
+    currency = crc;
+    amount = amt;
     stripe = Stripe(key);
     const options = {
         mode: 'payment',
-        amount: 100,
-        currency: currency,
+        amount: amt,
+        currency: crc,
         appearance: {
             theme: 'stripe',
         },
@@ -31,9 +32,9 @@ function initialize(c, key) {
     paymentElement.mount("#payment-element");
 }
 
-function updateAmount(newAmount) {
+function updateAmount(newAmount, newCurrency) {
     amount = newAmount;
-    elements.update({ amount: newAmount });
+    elements.update({ amount: newAmount, currency: newCurrency });
 }
 
 async function handleSubmit(e) {
@@ -47,9 +48,8 @@ async function handleSubmit(e) {
         return;
     }
 
-    const uuid = uuidv4();
-    const response = await fetch(`http://localhost:7109/payments/init?id=${uuid}&currency=${currency}&amount=${amount}`, {
-        method: "GET",
+    const response = await fetch("http://localhost:7109/payments/orders", {
+        method: "POST",
     });
     const { instruction } = await response.json();
     const { error } = await stripe.confirmPayment({
@@ -57,19 +57,22 @@ async function handleSubmit(e) {
         clientSecret: instruction,
         confirmParams: {
             // Make sure to change this to your payment completion page
-            return_url: `http://localhost:7109/payments/complete?id=${uuid}`,
+            return_url: `http://localhost:7109/payments/complete?id=123`,
         },
     });
 
-    // This point will only be reached if there is an immediate error when
-    // confirming the payment. Otherwise, your customer will be redirected to
-    // your `return_url`. For some payment methods like iDEAL, your customer will
-    // be redirected to an intermediate site first to authorize the payment, then
-    // redirected to the `return_url`.
-    if (error.type === "card_error" || error.type === "validation_error") {
-        showMessage(error.message);
+    if (error) {
+        // This point is only reached if there's an immediate error when
+        // confirming the payment. Show the error to your customer (for example, payment details incomplete)
+        if (error.type === "card_error" || error.type === "validation_error") {
+            showMessage(error.message);
+        } else {
+            showMessage("An unexpected error occurred.");
+        }
     } else {
-        showMessage("An unexpected error occurred.");
+        // Your customer is redirected to your `return_url`. For some payment
+        // methods like iDEAL, your customer is redirected to an intermediate
+        // site first to authorize the payment, then redirected to the `return_url`.
     }
 }
 
@@ -100,10 +103,4 @@ function setLoading(isLoading) {
         document.querySelector("#spinner").classList.add("hidden");
         document.querySelector("#button-text").classList.remove("hidden");
     }
-}
-
-function uuidv4() {
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
-        (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
-    );
 }
