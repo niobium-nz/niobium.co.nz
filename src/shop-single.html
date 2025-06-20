@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Niobium Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+
+    <div class="site-navbar bg-white py-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="index.html" class="js-logo-clone">Niobium Studio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section">
+      <div class="container" style="margin-top: 20px;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="border">
+              <img id="img" src="" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-black" id="title"></h2>
+            <p id="content"></p>
+
+            <p><strong class="text-primary h4" id="price"></strong></p>
+
+            <div class="mb-5">
+              <div class="input-group mb-3" style="max-width: 120px;">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                </div>
+                <input id="num" type="text" class="form-control text-center" value="1" placeholder=""
+                  aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                </div>
+              </div>
+
+            </div>
+            <p><a onclick="GoBuy()" href="#" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Buy Now</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="site-footer custom-border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4">About Us</h3>
+              <p>We're a New Zealand-based online store offering everyday essentials at great prices — all delivered
+                straight to your door. From home goods to daily must-haves, we make shopping simple, local, and
+                stress-free. Thanks for supporting a Kiwi-owned business!</p>
+            </div>
+            <div class="block-7">
+              <label for="email_subscribe" class="footer-heading" style="color: #343a40;"><a href="terms.html"
+                  style="color: #343a40;">Terms & Conditions</a></label>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-6">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">3/15 Ely Avenue, Remuera, Auckland 1050</li>
+                <li class="phone"><a href="tel://0276116666">027 611 6666</a></li>
+                <li class="email">sales@niobium.co.nz</li>
+                <li class="">NZBN: 9429046529206</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+
+    // 扩展jQuery的getUrlParam方法
+    (function ($) {
+      $.getUrlParam = function (name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      };
+    })(jQuery);
+
+
+    let arr = [
+      {
+        id: 0,
+        title: "Portable Pet Water Bottle with Activated Carbon Filter – Ideal for Outdoor Travel, Hiking, and Walking for Dogs and Cats",
+        price: 35.97,
+        content: "Keep your furry companion hydrated wherever you roam with our Portable Pet Water Bottle, complete with an activated carbon filter for fresh, clean drinking water. Designed for both dogs and cats, this travel-friendly dispenser is a must-have for any outdoor adventure. Whether you're hiking, walking, or traveling, its sleek and convenient design ensures your pet can enjoy pure water anytime, anywhere. At Barking Meows, we prioritize your pet's health and comfort, offering innovative solutions for pet parents who care about quality and sustainability.",
+        img: "img/pet_water_bottle/2.png"
+      },
+      {
+        id: 1,
+        title: "Portable Pet Water Bottle with Activated Carbon Filter – Ideal for Outdoor Travel, Hiking, and Walking for Dogs and Cats",
+        price: 35.97,
+        content: "Keep your furry companion hydrated wherever you roam with our Portable Pet Water Bottle, complete with an activated carbon filter for fresh, clean drinking water. Designed for both dogs and cats, this travel-friendly dispenser is a must-have for any outdoor adventure. Whether you're hiking, walking, or traveling, its sleek and convenient design ensures your pet can enjoy pure water anytime, anywhere. At Barking Meows, we prioritize your pet's health and comfort, offering innovative solutions for pet parents who care about quality and sustainability.",
+        img: "img/pet_water_bottle/2.png"
+      },
+      {
+        id: 2,
+        title: "5M Automatic Retractable Dog Leash LED",
+        price: 55.97,
+        content: "5M LED Retractable Dog Leash,dog accessories / dog leash / Leash for dog / Dog leashes / Pet leash / Leash for pet,leash for small dogs / Straps for dogs / retractable dog leash / dog leash retractable",
+        img: "img/retractable_dog_leash/S2751183280d249db971c0fb06d15425ee.webp"
+      },
+      {
+        id: 3,
+        title: "Anti-Lost Cat Collar for Airtag GPS Tracker",
+        price: 23.97,
+        content: "Specially designed for The Apple AirTag location tracker.It can protect your device from scratches, bumps, damages and so on.Multi-colors choice to meet your needs, add fashion and beauty to your device.",
+        img: "img/anti_lost_cat_collar/S7bdf98ce8ec74aab94c8635c0c995ec4D.webp"
+      },
+      {
+        id: 4,
+        title: "Premium Stainless Steel Cat & Puppy Feeder Bowl",
+        price: 31.97,
+        content: "Transform mealtime into a delightful experience with our Stainless Steel Cat & Puppy Feeder Bowl. Thoughtfully designed to promote a healthy posture, this elevated bowl features a 14cm heightened base, reducing strain on your pet's neck and spine. The spacious 14cm diameter and 4.5cm depth ensure an ample serving size while the anti-spill design minimizes mess. Crafted from eco-friendly materials, including durable stainless steel and HIPS, it's perfect for both food and water. Choose from elegant European and American style colors to match your home decor and give your beloved pet the dining experience they deserve. At Barking Meows, we prioritize quality, comfort, and sustainability in every product, ensuring a stylish and practical choice for your furry family member.",
+        img: "img/premium_stainless_steel_cat/S8ac970268acf4b3b87638a7704f35d903.webp"
+      },
+      {
+        id: 5,
+        title: "Dog Bed Sofa Washable",
+        price: 101.97,
+        content: "King Dog Bed Sofa Basket Dog Beds Fun Washable Removable Dog House Long Luxe Plush Outdoor Large Pet Cat Dog Bed Warm Mat Sofa",
+        img: "img/dog_bed/Sac1859c9e1e34410accc06da86af5822T.webp"
+      },
+      {
+        id: 6,
+        title: "Donut Cat Bed",
+        price: 48.97,
+        content: "Donut Cat Bed Pet Cat Tunnel Interactive Game Toy Cat Bed Dual-use Indoor Toy Kitten Sports Equipment Cat Training Toy Cat House",
+        img: "img/donut_cat_bed/S3dc73f5c1ccd4d979c4b28fcf1a7e114t.webp"
+      },
+      {
+        id: 7,
+        title: "Bath Massage Brush Soft Safety Silicone",
+        price: 23.5,
+        content: "1. The actual color of the item may be slightly different from the displayed image, which is caused by many factors, such as the brightness of the display and the brightness of the light.2. Please allow slight measurement deviation.",
+        img: "img/bath_massage_brush/Sd92dff531f5e40d28a504bce999dc1a95.webp"
+      },
+      {
+        id: 8,
+        title: "Dicunoy Set of 2 Fondue Mugs with Forks, Ceramic Personal Chocolate Melting Cup for Cheese, Individual Ceramic Butter Warmers Pot, Tealight Candle Mini Simmer Mug for Caramel, Tapas",
+        price: 23.5,
+        content: "2 sets of ceramic fondue mug with 4 stainless steel forks, size: 4 in top diameter, 5 in height. Individual fondue mug is suitable to serve customers in the party. Dishwasher-safe.",
+        img: "img/chocolate_cup/5129JO3B2DL._AC_SX679_.png"
+      },
+      {
+        id: 9,
+        title: "Ice Cube Tray Silicone Ice Mold for 40 oz Tumbler Hollow Cylinder Design with Lid and Bin Perfect Fit for Cup H2.0 Reusable Ice Tray",
+        price: 16.5,
+        content: "Ice Cube Tray Designed for Cup: This upgraded all-in-one ice cube tray is specially designed for the Cup H2.0, compatible with 30-40 ounce capacity, ensuring a perfect fit for the cup and providing a premium chilling experience.",
+        img: "img/ice_cube/71rJc8FsgsL._AC_SL1500_.png"
+      },
+      {
+        id: 10,
+        title: "Cool Summer Ice Bottle Cup,Ice Bottle Cup,2 in 1 Zero Touch Press Ice Cube Mold Water Bottle with Lid and Bin,Easy Ice Release for Freezer, Leakproof, for Coffee and Juice(800ml/28oz)",
+        price: 19.5,
+        content: "Ice Bottle Cup:---The design of the ice cube bottle combines the functions of ice making and water bottle; allowing you to enjoy refreshing drinks at any time without the need for additional containers - perfect for home, outdoor and travel",
+        img: "img/ice_bottle_cup/71aukIPPw7L._AC_SX679_.jpg"
+      },
+      {
+        id: 11,
+        title: "EZ Off Jar Opener for Seniors - Under Cabinet Jar Openers for Weak Hands, Easy Grip, Arthritis jar opener, One Handed Gadgets & Bottle Opener - Essential Kitchen Gadgets for Home Assistance",
+        price: 19.5,
+        content: "Great Gifts For Seniors: Make life easier for seniors with our jar openers. Designed for those with weak hands or arthritis, it's a thoughtful choice",
+        img: "img/ez_off_jar/61fn7iXS1FL._AC_SX679_.jpg"
+      },
+      {
+        id: 12,
+        title: "Shaved Ice Machine Snow Cone Machine Manual - Portable Ice Crusher and Shaved Ice Machine with Free Ice Cube Trays",
+        price: 15.5,
+        content: "【Easy to Use】This ice shaver machine uses special frozen ice molds, when the ice is shaved by less resistance, will be more energy-saving than other ice shaver machine, can help you easily shave the smoothie",
+        img: "img/shaved_ice_machine/61ncRBNNFQL._AC_SX679_.jpg"
+      },
+      {
+        id: 13,
+        title: "Sun Visors Hat with Fan for Women - Fan Visor Hat - Three-Speed Adjustment and Large Area Sun Protection",
+        price: 16.9,
+        content: "Fan Visor Hats made of Pvc material, odorless, fit forehead part with soft absorbent material, sweat absorption and non-slip. (Note: when cleaning the hat fan parts please use a wipe can, not directly soaked in water)",
+        img: "img/sun_visors_hat/61kN7nSYeAL._AC_SX522_.jpg"
+      },
+      {
+        id: 14,
+        title: "Led Drawing Board, 12X8 Acrylic Dry Erase Board Doodle Glow, Light up Note Board with Stand and 7 Markers, Message Board, Drawing Board for Kids for Office, School, Home",
+        price: 14.99,
+        content: "Fan Visor Hats made of Pvc material, odorless, fit forehead part with soft absorbent material, sweat absorption and non-slip. (Note: when cleaning the hat fan parts please use a wipe can, not directly soaked in water)",
+        img: "img/led_drawing_board/71rJc8FsgsL._AC_SL1500_.jpg"
+      },
+    ]
+
+
+    let id = 1;
+    $(document).ready(function () {
+      const idReq = $.getUrlParam('id');
+      console.log(idReq); // 输出参数值
+      id = parseInt(idReq);
+      console.log(id);
+      if(id<0 || id>arr.length || !id){
+        id = 1;
+      }
+
+      $("#title").text(arr[id].title)
+      $("#content").text(arr[id].content)
+      $("#price").text("$"+arr[id].price)
+      $("#img").attr("src", arr[id].img);
+
+    });
+
+
+    function GoBuy(){
+      window.location.href = "checkout.html?id="+id+"&num="+$("#num").val(); 
+    }
+
+  </script>
+</body>
+
+</html>
