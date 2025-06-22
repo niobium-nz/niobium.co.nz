@@ -48,10 +48,11 @@ async function handleSubmit(e) {
         return;
     }
 
-    const response = await fetch("http://localhost:7109/payments/orders", {
-        method: "POST",
-    });
-    const { instruction } = await response.json();
+    //const response = await fetch("http://localhost:7109/payments/orders", {
+    //    method: "POST",
+    //});
+    //const { instruction } = await response.json();
+    const instruction = "pi_3RcjXfRt21XMpal80HiULLaY_secret_n8eYHHvYHft3Uc0isIgLgUQdA";
     const { error } = await stripe.confirmPayment({
         elements,
         clientSecret: instruction,
