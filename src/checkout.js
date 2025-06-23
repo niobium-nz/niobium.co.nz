@@ -3,7 +3,7 @@ let currency;
 let elements;
 let amount;
 
-initialize("nzd", 988, "pk_test_51RSwkoRt21XMpal88MegWydqv4YnluqxPMXXCrh0EGbYJEUokmgwZkHxf18BiCrurjrRaWbqwf0hygdKUBdo5IlP00s8EmNX99");
+initialize(988, "nzd", "pk_test_51RSwkoRt21XMpal88MegWydqv4YnluqxPMXXCrh0EGbYJEUokmgwZkHxf18BiCrurjrRaWbqwf0hygdKUBdo5IlP00s8EmNX99");
 
 document
     .querySelector("#payment-form")
